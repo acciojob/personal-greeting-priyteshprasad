@@ -9,9 +9,9 @@ const App = () => {
   return (
     <div>
       {/* Do not remove the main div */}
-      <p>Enter your name:</p>
-      <input onChange={handleChange}></input>
-      {name.length > 0 ? <p>Hello {name}</p> : null}
+      <label for="name">Enter you name:</label>
+      <input id="name" onChange={handleChange}></input>
+      {name.length > 0 ? <p>Hello {name}!</p> : null}
     </div>
   );
 };
